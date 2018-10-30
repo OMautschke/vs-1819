@@ -1,15 +1,23 @@
+import sys
 import socket
-import time
+import hashlib
 
-HOST = '127.0.0.1'  # The server's hostname or IP address
-PORT = 65432        # The port used by the server
+
+HOST = "127.0.0.1"
+PORT = 4662
+
+h = hashlib.md5()
+
+if len(sys.argv) != 3:
+    print("usage:", sys.argv[0], "<name> <password>")
+    sys.exit(1)
+
+name, password = sys.argv[1:3]
+h.update(password.encode())
+msg = name + " " + h.hexdigest()
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
-    while True:
-        s.sendall(b'Hello, world')
-        data = s.recv(1024)
-
-print('Received', repr(data))
-
-// TEST
+    s.sendall(msg.encode())
+    data = s.recv(1024)
+print(repr(data.decode()))
