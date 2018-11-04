@@ -3,3 +3,47 @@ Ex. 2
 The address space of two processes are completly different and distinct and local to each process.
 Two pointer, a and b, a from process A and b from process B might even have the same address, but still point
 to two different variables.
+
+Ex. 6
+
+Sun ONC:
+Pro:
+- No need of unique transport adress, only address of port mapper needs to be known,
+  You also need a unique programm number per server
+- Transport independent, the protocol can be selected at runtime
+- Application does not have to deal with maintaining message boundaries, fragmentation and reassembly
+- Function call model can be used instead of send/receive
+
+DCE:
+Pro:
+- Allows several maschines to be organized into and adminitrative entity -> cell
+  Sun RPC requires client to know name of server
+- programs get a unique ID with uuidgen, in Sun the programmer needs to pick a unique 32-bit number for program
+
+Cons for both Sun RPC and DCE RPC:
+- If server not running: 
+                        Service cannot be accessed
+                        Admin needs to start it
+- Client has no mechanism for knowing if a new service was added
+- Service may behave differently based on data types passed to it
+
+CORBA:
+Pro:
+- Software components can run on multiple computers to work together, independent of their computer language
+- Specification is independent of any language, OS and network
+- Corba clients are portable
+- Reliable , comprehensive and language neutral
+- Standardized and supported by many vendors
+
+Cons:
+- complex, expensive to implement and often ambiguous
+- Steep learning curve
+- Integration with languages not alway straightforward
+- Not suitable for Internet/WANs
+- All function calls are treated the same, accessing objects is expensive, even in the same address space
+- Used to have problems with restrictive firewalls
+
+Use cases:
+- Corba when implementing a distrubuted system with different os and computer languages but not with WANs or Internet
+- DCE for client-server applications in heterogeneous distributed environments or WANS
+- Sun ONC 
