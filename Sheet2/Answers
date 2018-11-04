@@ -1,0 +1,5 @@
+Ex. 2
+
+The address space of two processes are completly different and distinct and local to each process.
+Two pointer, a and b, a from process A and b from process B might even have the same address, but still point
+to two different variables.
