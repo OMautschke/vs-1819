@@ -9,9 +9,12 @@ def callbackF(primes, sec):
 
 if __name__ == "__main__":
     import rpyc
-    # Parameter here: server-name/IP-adr, server-port
-    c = rpyc.connect("localhost", 18861)
+    
     N = int(sys.argv[1]) # Number of intervals
+    # Parameter here: server-name/IP-adr, server-port
+    c = [None]*N 
+    for i in range(N):
+        c[i] = rpyc.connect("localhost", 18861)
     lower, upper = 1000000, 3000000
     list_of_primes = [None]*N
     interval = (upper - lower) // N
@@ -21,15 +24,16 @@ if __name__ == "__main__":
     #bgsrv = rpyc.BgServingThread(c) 
 
     print("\n### Starting request ...")
-
-    async_primes = rpyc.async_(c.root.get_primes)
+    async_primes = [None]*N
+    for i in range(N):
+        async_primes[i] = rpyc.async_(c[i].root.get_primes)
     start_time = time.time()
 
     for i in range(N):
         if (i == N-1):
-            list_of_primes[i] = async_primes(lower, upper, callbackF)
+            list_of_primes[i] = async_primes[i](lower, upper, callbackF)
         else:
-            list_of_primes[i] = async_primes(lower, lower + interval, callbackF)
+            list_of_primes[i] = async_primes[i](lower, lower + interval, callbackF)
             lower += interval
     b = False
     while(not b):

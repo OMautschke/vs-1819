@@ -41,7 +41,7 @@ class MyService(rpyc.Service):
         return list_of_primes
 
 if __name__ == "__main__":
-    from rpyc.utils.server import ThreadedServer
-    t = ThreadedServer(MyService, port=18861)
+    from rpyc.utils.server import ForkingServer
+    t = ForkingServer(MyService, port=18861)
     t.start()
 
