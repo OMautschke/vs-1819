@@ -1,0 +1,30 @@
+1. Output the biggest of the input numbers.
+max = input_data.reduce(lambda x, y: is_greater(x, y))
+
+
+2. Output the geometric mean of the input numbers.
+mean = input_data.reduce(lambda x, y: x + y)
+				 .map(lambda x: x / len(input_data))
+	  
+
+3. Output the input set of numbers, but without duplicates.
+set = input_data
+while True:
+	old_set = set
+	set = set.reduce(lambda x, y: if(x > y) change_pos(x, y))
+	if old_set == set:
+		break
+		
+set.reduce(lambda x, y: if(x == y) set.remove(y))
+
+
+4. Output the size of the input set (ignoring multiplicity)
+set = siehe 3.
+counter = 0
+new_set = set.map(lambda x: count++)
+
+
+5. (1 Point) Output the frequencies of a word given from a huge text file (Word Count).
+word_count = text_file.map(lambda line: line.split(" "))
+					  .map(lambda word: (word, 1))
+					  .reduceByKey(lambda a, b: a + b)
