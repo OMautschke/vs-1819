@@ -21,7 +21,7 @@ set.reduce(lambda x, y: if(x == y) set.remove(y))
 4. Output the size of the input set (ignoring multiplicity)
 set = siehe 3.
 counter = 0
-new_set = set.map(lambda x: count++)
+new_set = set.map(lambda x: counter++)
 
 
 5. (1 Point) Output the frequencies of a word given from a huge text file (Word Count).
