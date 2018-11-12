@@ -5,7 +5,7 @@ from pyspark.sql.types import *
 # Build the SparkSession
 spark = SparkSession.builder \
    .master("local") \
-   .appName("Linear Regression Model") \
+   .appName("Ex_4") \
    .config("spark.executor.memory", "8gb") \
    .getOrCreate()
 
