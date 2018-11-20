@@ -1,0 +1,30 @@
+1. Describe each step of Spark execution model.
+
+   - Create a directed acyclic graph DAG of RDDs (participant dataset) to represent the actuall computation.
+     RDD: every single operation (map, groupBy, mapValues, collect...)
+   - Create logical execution plan for DAG, how can we execute it efficiently
+   - Schedule and execute the individual tasks from the logical plan and send it to the cluster
+
+2. In the execution phase, Spark tries to pipeline operations as much as possible. 
+   How does pipelining affect performance? Give examples of operations that can be pipelined.
+   
+   Pipelining means to fuse operations together to minimalize costs of like going over the data multiple times
+   or having a lot of overhead for each operation. Each operation is done for every single element in a row. The 
+   result is immediately adopted and passed to another function call.
+   Example operations: map(), mapValues()
+   
+3. List the four most common issues described by Aaron. What is the recommended setting and guidelines to deal 
+   with the problems described in the talk?
+   
+   1. Ensure there are enough partitions for concurrency
+      - commonly between 100 and 10.000 partitions
+	  - lower bound: At least ~2x number of cores as the number of clusters
+	  - upper bound: Ensure tasks take at least 100ms
+   2. Minimize memmory consumption, especially of sorting and large keys in groupBys
+   3. Minimize amount of data shuffled
+   4. Know the standard library
+   
+   Memory Problems:
+   - Increase spark executor memory
+   - increase number of partitions
+   - Re-evaluate program structure
