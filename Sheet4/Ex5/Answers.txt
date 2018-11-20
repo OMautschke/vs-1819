@@ -1,0 +1,4 @@
+Instead of the for loop they use reduceByKey to puit all elements in pointStats at once and map it to
+newPoints, in our code we have to go through the loop to do it one element after the other.
+However in the code from git they have to go through a loop to then put the points p in kPoints with indices iK.
+

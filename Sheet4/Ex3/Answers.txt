@@ -1,0 +1,21 @@
+a) It did exactly what it was supposed to do. It took the words and counted them
+('step', 1)
+('giant', 1)
+('mankind.', 1)
+('a', 2)
+('for', 2)
+('man,', 1)
+('A', 1)
+('small', 1)
+('leap', 1)
+using the code of https://github.com/apache/spark/blob/master/examples/src/main/python/streaming/network_wordcount.py
+
+b)
+output:
+('k', 42192)
+('bai', 84384)
+('thx', 42192)
+
+Yes repeats a Char or String until a condition is met, eg. user kills the process. In this code it repeats the String 1 second
+Thus the the string was repeated 42192 times in 1 second.
+The text is splitted, so no " " characters -> k thx bai bai = 10 characters = 10 bytes -> 42192 repeats = 421920 bytes/s
