@@ -1,0 +1,20 @@
+Exercise 2
+
+1.
+
+State of the art is was at the moment the paper was written manly MapReduce
+The problem with existing computing frameworks was that reusage of intermediate results was
+not trivial. The developer had to store results on hard disk. It was not possible to store
+results in-memory. This made applications that have iterative approaches like many machine learning algorithms slow.
+
+2.
+
+The RDD approach has the advantage that fault tolerance does not need much performance. Due to the creation proces
+of RDDs, they can be easily recreated in case of failure. RDDs are efficient when one operation is applied to all data
+in a dataset. If fine-grained operations are needed, maybe shared memory is the better option.
+
+3.
+
+The dependencies in RDDs are represented with an inheritance tree. With this, the information how to create the RDD is light weight
+and the RDD can be recreated by any worker or node that has acess to the raw data, the RDD was originally
+created from
