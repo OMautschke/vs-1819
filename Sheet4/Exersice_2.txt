@@ -1,0 +1,10 @@
+a)
+PageMap only will be send once to each node. Scaling up with broadcast. Send ich node to the hadoop file system
+and read them only once.
+
+b)
+Often an application needs to aggregate multiple values as it progresses and accumulators generalize
+the concept called counters in MapReduce to enable this. The process can implmenented with normal reduce operator,
+but with accumulators it will be nicer. In the example the accumulator is used to counter up the bad records and the
+bad bytes in a filter operation. The accumulator variable also is typesafe. The difference to normal reduce oprator is
+that the accumulator variables can be used in any task and simply can be called.
