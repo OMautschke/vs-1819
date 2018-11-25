@@ -1,0 +1,4 @@
+Complicates approches dominate academia because you can write papers about it, simple ones often get rejected.
+Not every programmer is a Phd. so many complex solutions are too complicated for them to learn. Even Phds can have problems with them.
+However the implementation can be complex, what is most important is the interface, so it is easy to learn/use and thus
+it gets wiedespread much easier.
