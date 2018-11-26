@@ -1,0 +1,25 @@
+Exercise 2:
+
+a)
+Stärken:
+- WSDL: Protokolltransparenz, Unabhängigkeit, Flexibel für Synchrone und Asynchrone Struktur
+- WSDL: Abstrahiert das zugrunde liegende Kommunikationsprotokoll und den Serialisierungs-Details, 
+  sowie die Service-Implementierung
+- WSDL: Bei Änderung der Anforderungen, kann dieselbe abstrakte Serviceschnittstelle an verschiednene Transportprotokolle 
+  und Messaging-Endpunkte gebunden werden.
+- SOAP: die gleiche Nachricht im gleichen Format kann über eine Vielzahl von Middleware-Systemen transportiert werden
+- Beide verbergen die wahrgenommene Komplexität vom Anwendungsprogrammierer und Integrator
+
+Schwächen:
+- WSDL: Die Leistung der Tools kann bei falscher Implementierung missbraucht werden.
+- Leistungsineffizient bei Übersetzung von XML-Dateien auf die entsprechende Speicherstruktur
+- XML-Schema ist eine umfangreicher Sprache und es ist schwer das Datenmodell so auszudrücken, dass es von allen SOAP/
+  WSDL-Implementierungen vollständig unterstützt wird.
+
+b)
+Wenn dem Kunde schnell ein Prototyp präsentiert werden soll ist das Restprotokoll durchaus geeignet, da es schnell und
+einfach ist. Tests können einfach im Webbrowser gestartet werden und die Handhabung des Protokolls ist relativ einfach.
+Allerdings sollte bei der späteren Implementation darauf geachtet werden, dass die Software auf allen Webbrowsern
+funktioniert und an der Stelle keine Probleme gibt. Der Client sendet teilweise redundante Nachrichten, da immer
+alle Informationen gesendet werden und die Bandbreit wird mehr ausgelastet. Allerdings sollte dies in der heutigen
+Zeit kein Problem mehr darstellen.

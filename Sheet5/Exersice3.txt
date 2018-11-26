@@ -1,0 +1,25 @@
+﻿Exersice 3:
+- A realtime online multiplayer game: 
+  Viele Pakete müssen untereinander ausgetauscht werden. Latenz spielt dabei eine wichtige Rolle.
+  -> RPC, da die Technik auf UDP basiert, was ein Vorteil für die Latenz bringt.
+
+- Incorporate current exchange rates for international currencies in a desktop calculator app:
+  Anfrage vom Client an den Server um Daten zu erhalten. Einfaches Client-Server-Modell -> RPC
+
+- A cross-plattform distributred file system:
+  Daten müssen auf mehrere Rechner verteilt werden. Client-Server-Architektur, 
+  Zustandslosigkeit und einheitliche Schnittstelle von Vorteil
+  -> Rest
+  
+- A gaming platform where human and AI contestants are supposed to compete in turn-based-games (like chess)
+  that are ruled and recorded by a central server:
+  Client-Server-Architektur, mit wenigen Anfragen, da rundenbasiert. Dadurch ist eine eventuelle hohe Latenz 
+  eher zu vernachlässigen. -> TCP (Vorteil: Gute Kontrolle über zu sendende Pakete)
+
+- A service that replies to messages including a bitmap image with a set of labels that apply for the 
+  content of the image
+  -> TCP, um sicherzustellen, dass alle Pakete (alle Daten) eines Bildes ankommen und vollständig sind.
+  
+- A distributed computing platform that runs on a diverse grid of machines
+  Rest, Client-Server-Architektur, bei dem der Server einen Dienst bereitstellt, der bei Bedarf vom Client
+  angefragt werden kann.
