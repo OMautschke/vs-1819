@@ -1,4 +1,4 @@
-Exercise 2:
+﻿Exercise 2:
 
 a)
 Stärken:
@@ -23,3 +23,9 @@ Allerdings sollte bei der späteren Implementation darauf geachtet werden, dass 
 funktioniert und an der Stelle keine Probleme gibt. Der Client sendet teilweise redundante Nachrichten, da immer
 alle Informationen gesendet werden und die Bandbreit wird mehr ausgelastet. Allerdings sollte dies in der heutigen
 Zeit kein Problem mehr darstellen.
+
+c)
+Der Entwickler sollte sich im klaren sein, ob er sich auf das Format XML beschränken will (SOAP) oder eine allgemeinere
+Implementierung (REST) bevorzugt. Allerdings hängt REST widerum von HTML ab und SOAP ist Sprachen- und Plattformunabhängig.
+Außerdem sollte klar sein, was mit der Anwendung erreicht werden möchte, REST bietet mehr Flexibilität und lässt sich 
+leichter skalieren.
