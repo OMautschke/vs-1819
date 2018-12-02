@@ -1,0 +1,3 @@
+Time "moving backwards" can confuse message ordering and development environments.
+To resolve, let time move half as fast, 8 sec for the computer are 4 seconds in reality.
+The computer will then be on time again.
