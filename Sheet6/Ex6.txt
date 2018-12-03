@@ -1,0 +1,11 @@
+The earth rotates slightly slower than the second was defined. Thus a day lasts fractions of a second 
+longer than the definition of 86400 seconds. The effect accumulates with the time and to keep the time 
+synchronous the so-called leap second is introduced.
+The leap second is right in the middle of the smearing operation, because it minimizes the maximum offset.
+
+When computers or a real-time-system are tightly synchronized with UTC it could not cause disruptions
+if the time is synchronized with the leap second, e.g. tracking satellites. It would be expensive to modify it.
+A leap second can be announced by a higher-level NTP server, an external radio clock or GPS receiver, 
+or by a Leap Second File, a file containing a list of all leap seconds. Some operating systems include 
+support for leap seconds, others do not. If an operating system supports leap seconds, NTP can forward 
+the announcement to the kernel.
