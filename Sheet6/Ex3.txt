@@ -1,2 +1,1 @@
-The client should use Message one (Round-trip: 22), because the remote time stamp from the server is the highest.
-The Client should set its clock to 
+servertime + roundtrip / 2 = 
