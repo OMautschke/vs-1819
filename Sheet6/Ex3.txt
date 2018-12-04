@@ -1,1 +1,11 @@
-servertime + roundtrip / 2 = 
+You would choose the third.
+Resulting time:
+servertime + roundtrip / 2 = 10:54:28:342 + 20/2 = 10:54:28:352
+Error interval:
+Computation of server, request and reply speed unknown.
+Worst case: request and reply time = 1ms
+=> accuracy = 20ms/2 - 2*1ms = 9ms
+It would change because the accuracy with the second message is higher:
+accuracy = 25ms/2 - 2*8ms = -3.5ms
+You can estimate it by measuring the servers time to compute its reply and sending it
+to the client => (Computation time - roundtrip time)/2
