@@ -1,0 +1,16 @@
+a)
+- it manages time in a much cleaner fashion the net date does
+- ntpd continually talk to each other and prevents drift from happening
+
+b)
+if the time difference between the provider and the consumer is small such as less than about 128ms then the NTP
+protocol is going to adjust the time on the time consumer very gradually
+-> slewing
+
+if the time difference between the provider and the consumer ist large then it's going to have to make time
+adjustments more quickly
+-> Stepping
+
+c)
+if the time difference between the provider and the consumer ist more than 17 minutes then the NTP
+damon is going to consider time to be insane.
