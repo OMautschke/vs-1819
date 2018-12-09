@@ -1,0 +1,8 @@
+IA: events e and e' are directly connected, no messages between. => e -> e' => V(e) < V(e')
+
+IV: e -> e' => V(e) < V(e') shal be true for n messages Mn connecting events e and e'
+
+IS: n -> n+1 messages between e and e'
+    e -> M1 ->...-> Mn -> Mn+1 -> e' => V(e) < V(M1) <...< V(Mn) < V(Mn+1) < V(e')
+<=> e -> Mn+1 -> e' => V(e) < V(Mn+1) < V(e') | because of IV and transitivity
+<=> e -> e' => V(e) < V(e') | because of transitivity
