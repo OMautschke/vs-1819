@@ -36,7 +36,7 @@ if __name__ == '__main__':
     stepsN = [None]*18 #Average steps per run N
     statesN = [None]*18 #Average number of changed states per run N
 
-    for N in range(2, 21):
+    for N in range(2, 20):
         steps = 0
         states = 0
         bPrivilege = [True]*N #At the beginning, assume every node is privileged
@@ -47,13 +47,19 @@ if __name__ == '__main__':
                 #print(not isStable(bPrivilege))
                 dijkstra_token_ring(node, random.randint(0,N-1), K)
                 steps += 1
-            stepsN[N-3] = steps/15
-            statesN[N-3] = states/15
-        print("Average steps: ", stepsN[N-3])
-        print("Average state changes: ", statesN[N-3])
+        stepsN[N-2] = steps/15
+        statesN[N-2] = states/15
+        print("Average steps: ", stepsN[N-2])
+        print("Average state changes: ", statesN[N-2])
         print("---------------------------")
+    plt.figure(1, figsize=(30, 10))
+    plt.subplot(131)
     plt.plot([y for y in range (2, 20)], stepsN)
-    plt.show()
+    plt.ylabel('Average steps taken')
+    plt.xlabel('number of N')
+    plt.subplot(132)
     plt.plot([y for y in range (2, 20)], statesN)
+    plt.ylabel('Average states changed')
+    plt.xlabel('number of N')
     plt.show()
 
