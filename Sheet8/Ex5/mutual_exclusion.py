@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import random
+import matplotlib.pyplot as plt
+
 
 def isStable(bPrivilege):
     #print(bPrivilege)
@@ -50,3 +52,8 @@ if __name__ == '__main__':
         print("Average steps: ", stepsN[N-3])
         print("Average state changes: ", statesN[N-3])
         print("---------------------------")
+    plt.plot([y for y in range (2, 20)], stepsN)
+    plt.show()
+    plt.plot([y for y in range (2, 20)], statesN)
+    plt.show()
+
