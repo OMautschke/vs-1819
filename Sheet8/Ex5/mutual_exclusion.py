@@ -41,8 +41,9 @@ if __name__ == '__main__':
         states = 0
         bPrivilege = [True]*N #At the beginning, assume every node is privileged
         K = N
-        node = random.sample(range(K), N)
+
         for k in range(15):
+            node = random.sample(range(K), N)
             while(not isStable(bPrivilege)):
                 #print(not isStable(bPrivilege))
                 dijkstra_token_ring(node, random.randint(0,N-1), K)
