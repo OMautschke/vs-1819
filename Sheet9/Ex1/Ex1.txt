@@ -1,0 +1,8 @@
+System S is not a stabilizing system.
+P: each configuration is the same
+  -> one execution satisfies P when the system enters a configuration and never leaves it again
+
+"A stabilizing system is one which if started at any state is guaranteed to reach a state after which the system cannot deviate from its intended specification." -https://dl.acm.org/citation.cfm?id=1081403
+
+Consider the system starts with state a and remains there, then it can not be guaranteed, that it will not transition to a -> b and a -> b -> b.
+Thus a configuration a -> a -> ... -> a is not guaranteed to leave it and because it can deviates from its specification it is not stabilizing.
