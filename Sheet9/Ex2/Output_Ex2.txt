@@ -1,0 +1,389 @@
+N = 2:
+Simulation started
+Init...
+Process 0 inited
+Process 1 inited
+Process 1 tries to enter critical section
+Process 1 is sending a broadcast
+Process 0: Message queued
+Process 0 tries to enter critical section
+Process 0 is sending a broadcast
+
+N = 4:
+Simulation started
+Init...
+Process 0 inited
+Process 1 inited
+Process 2 inited
+Process 3 inited
+Process 2 tries to enter critical section
+Process 2 is sending a broadcast
+Process 3: Message queued
+Process 3: Message queued
+Process 3 tries to enter critical section
+Process 3 is sending a broadcast
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 1 tries to enter critical section
+Process 1 is sending a broadcast
+Process 2: Message send to 1
+Process 2: Message send to 1
+Process 0 tries to enter critical section
+Process 0 is sending a broadcast
+Process 1: Message queued
+Process 1: Message queued
+
+N = 8:
+Simulation started
+Init...
+Process 0 inited
+Process 1 inited
+Process 2 inited
+Process 3 inited
+Process 4 inited
+Process 5 inited
+Process 6 inited
+Process 7 inited
+Process 1 tries to enter critical section
+Process 1 is sending a broadcast
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 6 tries to enter critical section
+Process 6 is sending a broadcast
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 3 tries to enter critical section
+Process 3 is sending a broadcast
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 0 tries to enter critical section
+Process 0 is sending a broadcast
+Process 1: Message send to 0
+Process 1: Message send to 0
+Process 1: Message send to 0
+Process 1: Message send to 0
+Process 1: Message send to 0
+Process 1: Message send to 0
+Process 2 tries to enter critical section
+Process 2 is sending a broadcast
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message queued
+Process 3: Message queued
+Process 3: Message queued
+Process 3: Message queued
+Process 7 tries to enter critical section
+Process 7 is sending a broadcast
+Process 0: Message send to 7
+Process 0: Message send to 7
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 4 tries to enter critical section
+Process 4 is sending a broadcast
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5 tries to enter critical section
+Process 5 is sending a broadcast
+Process 6: Message queued
+Process 6: Message queued
+Process 6: Message queued
+Process 6: Message queued
+Process 6: Message queued
+Process 6: Message queued
+
+N = 16:
+Simulation started
+Init...
+Process 0 inited
+Process 1 inited
+Process 2 inited
+Process 3 inited
+Process 4 inited
+Process 5 inited
+Process 6 inited
+Process 7 inited
+Process 8 inited
+Process 9 inited
+Process 10 inited
+Process 11 inited
+Process 12 inited
+Process 13 inited
+Process 14 inited
+Process 15 inited
+Process 3 tries to enter critical section
+Process 3 is sending a broadcast
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 4: Message queued
+Process 6 tries to enter critical section
+Process 6 is sending a broadcast
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 7: Message queued
+Process 10 tries to enter critical section
+Process 10 is sending a broadcast
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 11: Message queued
+Process 12 tries to enter critical section
+Process 12 is sending a broadcast
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 13: Message queued
+Process 7 tries to enter critical section
+Process 7 is sending a broadcast
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 8: Message queued
+Process 9 tries to enter critical section
+Process 9 is sending a broadcast
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 10: Message send to 9
+Process 14 tries to enter critical section
+Process 14 is sending a broadcast
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 15: Message queued
+Process 8 tries to enter critical section
+Process 8 is sending a broadcast
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 9: Message queued
+Process 0 tries to enter critical section
+Process 0 is sending a broadcast
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 1: Message queued
+Process 5 tries to enter critical section
+Process 5 is sending a broadcast
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 6: Message send to 5
+Process 15 tries to enter critical section
+Process 15 is sending a broadcast
+Process 0: Message send to 15
+Process 0: Message send to 15
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 0: Message queued
+Process 2 tries to enter critical section
+Process 2 is sending a broadcast
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 3: Message send to 2
+Process 1 tries to enter critical section
+Process 1 is sending a broadcast
+Process 2: Message send to 1
+Process 2: Message send to 1
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 2: Message queued
+Process 4 tries to enter critical section
+Process 4 is sending a broadcast
+Process 5: Message send to 4
+Process 5: Message send to 4
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 5: Message queued
+Process 11 tries to enter critical section
+Process 11 is sending a broadcast
+Process 12: Message send to 11
+Process 12: Message send to 11
+Process 12: Message queued
+Process 12: Message queued
+Process 12: Message queued
+Process 12: Message queued
+Process 12: Message queued
+Process 12: Message queued
+Process 12: Message queued
+Process 12: Message queued
+Process 12: Message queued
+Process 12: Message queued
+Process 12: Message queued
+Process 12: Message queued
+Process 13 tries to enter critical section
+Process 13 is sending a broadcast
+Process 14: Message send to 13
+Process 14: Message send to 13
+Process 14: Message queued
+Process 14: Message queued
+Process 14: Message queued
+Process 14: Message queued
+Process 14: Message queued
+Process 14: Message queued
+Process 14: Message queued
+Process 14: Message queued
+Process 14: Message queued
+Process 14: Message queued
+Process 14: Message queued
+Process 14: Message queued
