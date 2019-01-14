@@ -1,0 +1,23 @@
+- A malicious miner can try to reverse existing the transacitons of a blockchain
+- A miner is supposed to broadcast the solution that was found to all other miners so that they can verify it
+- The corrupted miner can create an offspring by not broadcasting the solution, than there are two versions of the blockchain
+- The corrupted miner and all other miners in the network are following different versions
+- Now the corrupted miner can spend Bitcoins on the trutzful version and the isolated version does not include these transaction
+- The Bitcoins of the isolated one are still there
+- The corrupted miner still works on the isolated blockchain as normally
+- The majority of the miners add blocks to their version of the blockchain faster than the rest of the network and
+  the longest chain has the majority. So its determined which version is the truth
+- The corrupted miner now try to add block to his isolated blockchain faster than the others and as soon as the isolated blockchain
+  is longer than the truth blockchain the miner will broadcast it to the whole network.
+- All miners will detect that the corrupted version is actually longer and the protocol forces them to switch to this chain
+- The corrupted blockchain is now considered the truthful blockchain, and all transactions that are not included on this chain will be reversed immediately
+
+
+The malicious miner will require more hashing power than the rest of the network combined (51% of hashing power). So these
+kind of attacks are extremely hard to perform. There are perhaps even hundreds of thousands of miners and even the strongest
+computer on earth is not competitive with the total computational power of the whole network. So its very unlikely.
+
+
+On a smaller blockchain less computing power is needed for a 51% attack, because of a smaller number of miners.
+Theoretical the network would be much vulnerable, but today the networks and their blockchains are getting bigger and bigger
+and the case would be nullified.

@@ -1,0 +1,31 @@
+1.
+- Cryptocurrencies and blockchains are inreasing in popularity.
+- To process transactions, blocks are used and the maximium size of the blocks was limited
+- It was designed to make Bitcoin more secure, but it is not future-proof
+- With a maximum, Bitcoin is unable to handle all the transactions per second to prevent delays for consumers and businesses
+
+2.
+- Solutions take time and a lot of effort
+- Because any proposal has to have support of miners, developers etc. before it can be enforced
+- There were discussions by Bitcoin to increase the block size, with no probposal gaining enough traction to be adopted
+- 2018 the block size was successfully upgraded from 1MB to 32MB, but it gets more expensive
+
+3.
+- One solution is a secondary layer which operates on top of a blockchain
+- In theory, it can process an unlimited number of transactions
+- But there are downsides concerning security
+
+4.
+- Decentralized applications do not need to fully run on a blockchain — meaning many of their processes can be processed “off-chain.”
+- Off-chain scaling solutions would ensure that certain transactions are completed without miners, allowing only essential information to be synchronized
+- Improvements and upgrades could also be agreed upon and implemented without the arduous process of getting approval from every stakeholder in the community
+- New features could be distributed without the whole blockchain being disrupted
+- The downside would be, that off-chain transactions would be harder for the public to verify, and it could also create compliance issues
+
+5.
+- Transactions will take longer and longer to process
+- Blockchain platforms need to offer instantly transactions if they are going to be a viable aternative
+- Fractonet worked on a “complete redesign” of the blockchain to eliminate scalability issues
+- It successfully managed to process 33,888 transactions per second
+- The protocol can store data on-chain as well as transactions with real data immutability
+- Businesses no longer have to entrust third parties with sensitive information
