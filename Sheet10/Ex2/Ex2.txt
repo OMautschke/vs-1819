@@ -1,8 +1,8 @@
 a)
 
 Chang and Roberts:
-turnaround time: 3n-1
-messages sent: 3n-1
+turnaround time: 3n-1 --> O(n)
+messages sent: 3n-1 --> O(n)
 
 pros:
 -asynchronous
@@ -12,3 +12,22 @@ cons:
 -tolerates no failures
 
 Peterson:
+turnaround time: log(n) +1 --> O(log(n))
+messages sent: 2n(log(n)+1) --> O(n*log(n))
+
+pros:
+-knowlegde of n unnecessary
+-asynchronous
+
+cons:
+-tolerates no failures
+
+b)
+Bully algorithm uses timeouts to detect failures, the floodmax algorithm checks each round, if there is a new leader.
+If the actual coordinator in the bully algorithm needs to long to send a message there can be a false timeout.
+There are no guarantees of message delivery order, resulting in different conclusion which the process the new coordinator process is.
+There can be two processes anouncing themselfs coordinator, if one process replaces the crashed process with the same identifier and they announce
+being a coordinator concurrently.
+In the floodmax algorithm there can't be to coordinators but if all the neighbors of a process die, then the process can't communicate with
+other processes anymore.
+The floodmax algorithm is more reliabla than the bully algorithm.
