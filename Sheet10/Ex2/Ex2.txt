@@ -1,0 +1,14 @@
+a)
+
+Chang and Roberts:
+turnaround time: 3n-1
+messages sent: 3n-1
+
+pros:
+-asynchronous
+-good example to understand ring based election algorithms
+
+cons:
+-tolerates no failures
+
+Peterson:
