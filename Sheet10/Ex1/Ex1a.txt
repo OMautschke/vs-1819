@@ -1,0 +1,67 @@
+Simulation started
+Init...
+Process 0 inited
+Process 1 inited
+Process 2 inited
+Process 3 inited
+Process 4 inited
+Process 5 inited
+Process 6 inited
+Process 7 inited
+Process 0 - ACTIVE
+Process 1 - ACTIVE
+Process 2 - ACTIVE
+Process 3 - ACTIVE
+Process 4 - ACTIVE
+Process 5 - ACTIVE
+Process 6 - ACTIVE
+Process 7 - ACTIVE
+Process 0 - ACTIVE
+Process 1 - RELAY
+Process 2 - RELAY
+Process 3 - RELAY
+Process 4 - RELAY
+Process 5 - RELAY
+Process 6 - RELAY
+Process 7 - RELAY
+Process 0 - ACTIVE
+Process 1 - RELAY
+Process 2 - RELAY
+Process 3 - RELAY
+Process 4 - RELAY
+Process 5 - RELAY
+Process 6 - RELAY
+Process 7 - RELAY
+Process 0 - ACTIVE
+Process 1 - RELAY
+Process 2 - RELAY
+Process 3 - RELAY
+Process 4 - RELAY
+Process 5 - RELAY
+Process 6 - RELAY
+Process 7 - RELAY
+Process 0 - ACTIVE
+Process 1 - RELAY
+Process 2 - RELAY
+Process 3 - RELAY
+Process 4 - RELAY
+Process 5 - RELAY
+Process 6 - RELAY
+Process 7 - RELAY
+Process 0 - ACTIVE
+Process 1 - RELAY
+Process 2 - RELAY
+Process 3 - RELAY
+Process 4 - RELAY
+Process 5 - RELAY
+Process 6 - RELAY
+Process 7 - RELAY
+Process 0 - ACTIVE
+Process 1 - RELAY
+Process 2 - RELAY
+Process 3 - RELAY
+Process 4 - RELAY
+Process 5 - RELAY
+Process 6 - RELAY
+Process 7 - RELAY
+Process 7 was elected!
