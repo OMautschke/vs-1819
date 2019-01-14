@@ -1,5 +1,6 @@
 from enum import Enum
 from collections import deque
+import random
 import sys
 import time
 from random import randint
@@ -59,24 +60,25 @@ class Process:
 def main():
     print("Simulation started")
     print("Init...")
-    id = 0
+    N = 100
     elected = -1
     sharedMemory = deque([])
-    numProcesses = 7
+    numProcesses = list(range(0, N))
+    random.shuffle(numProcesses)
+
     processes = []
-    for i in range(0, numProcesses):
-        processes.append(Process(id))
-        id = id + 1
+    for i in range(0, len(numProcesses)):
+        processes.append(Process(numProcesses[i]))
 
     while True:
         processes[0].send(sharedMemory)
-        for p in range(1, numProcesses):
+        for p in range(1, len(numProcesses)):
             processes[p].receive(sharedMemory, 1)
             processes[p].send(sharedMemory)
         processes[0].receive(sharedMemory, 1)
 
         elected = processes[0].checkSend(sharedMemory, elected)
-        for p in range(1, numProcesses):
+        for p in range(1, len(numProcesses)):
             processes[p].receive(sharedMemory, 2)
             elected = processes[p].checkSend(sharedMemory, elected)
             if elected > -1:
@@ -85,7 +87,7 @@ def main():
             break
         processes[0].receive(sharedMemory, 2)
 
-        for p in range(0, numProcesses):
+        for p in range(0, len(numProcesses)):
             elected = processes[p].final(elected)
             if elected > -1:
                 break
@@ -96,4 +98,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
