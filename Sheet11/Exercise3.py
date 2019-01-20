@@ -8,11 +8,11 @@ NUM_OF_BLOCKS = 100
 
 
 class Block:
-    def __init__(self, index):
+    def __init__(self, index, prev_hash):
         self.index = index
         self.time_stamp = datetime.datetime.fromtimestamp(time.time()).strftime('%H:%M:%S')
         self.nounce = 0
-        self.prev_hash = 1
+        self.prev_hash = prev_hash
 
         self.proof_of_work()
 
@@ -31,14 +31,14 @@ class Block:
 
 
 def main():
-	# Part 1
+    # Part 1
     global NUM_OF_BLOCKS, LEADING_ZEROS
     block_chain = []
 
     guesses = 0
     start = time.time()
     for i in range(0, NUM_OF_BLOCKS):
-        block_chain.append(Block(len(block_chain)))
+        block_chain.append(Block(len(block_chain), block_chain[i - 1].prev_hash if i - 1 > -1 else 1))
         guesses += block_chain[i].nounce
     end = time.time()
 
@@ -50,25 +50,31 @@ def main():
     NUM_OF_BLOCKS = 10
     LEADING_ZEROS = 4
 
+    start = time.time()
     guesses = 0
     for i in range(0, NUM_OF_BLOCKS):
-        block_chain.append(Block(len(block_chain)))
+        block_chain.append(Block(len(block_chain), block_chain[i - 1].prev_hash if i - 1 > -1 else 1))
         guesses += block_chain[i].nounce
+    end = time.time()
 
-    print("Average guesses Blocks = 10; D = 4: " + str(int(guesses / NUM_OF_BLOCKS)) + "\n")
+    print("Average guesses Blocks = 10; D = 4: " + str(int(guesses / NUM_OF_BLOCKS)))
+    print("Time elapsed: " + str(end - start) + "\n")
 
-    ####################################################################################
+    ##############################################################################################
 
     block_chain = []
     NUM_OF_BLOCKS = 10
     LEADING_ZEROS = 5
 
+    start = time.time()
     guesses = 0
     for i in range(0, NUM_OF_BLOCKS):
-        block_chain.append(Block(len(block_chain)))
+        block_chain.append(Block(len(block_chain), block_chain[i - 1].prev_hash if i - 1 > -1 else 1))
         guesses += block_chain[i].nounce
+    end = time.time()
 
-    print("Average guesses Blocks = 10; D = 5: " + str(int(guesses / NUM_OF_BLOCKS)) + "\n")
+    print("Average guesses Blocks = 10; D = 5: " + str(int(guesses / NUM_OF_BLOCKS)))
+    print("Time elapsed: " + str(end - start) + "\n")
 
 
 if __name__ == "__main__":
