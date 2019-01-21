@@ -24,10 +24,11 @@ class Block:
         D = "0" * LEADING_ZEROS
 
         while True:
-            hash = hashlib.sha256(str(self.nonce*self.prev_nonce).encode('utf-8'))
+            hash = hashlib.sha256(str(self.nonce+self.prev_nonce).encode('utf-8'))
             self.guess += 1
             if D in str(hash.hexdigest()[:LEADING_ZEROS]):
                 self.prev_hash = hash
+                self.prev_nonce = self.nonce
                 break
             self.nonce += 1
 
