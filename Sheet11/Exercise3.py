@@ -8,12 +8,13 @@ NUM_OF_BLOCKS = 100
 
 
 class Block:
-    def __init__(self, index, prev_hash):
+    def __init__(self, index, prev_hash, prev_nonce):
         self.index = index
         self.time_stamp = datetime.datetime.fromtimestamp(time.time()).strftime('%H:%M:%S')
         self.nonce = 0
         self.prev_hash = prev_hash
         self.guess = 0
+        self.prev_nonce = prev_nonce
 
         self.proof_of_work()
 
@@ -23,7 +24,7 @@ class Block:
         D = "0" * LEADING_ZEROS
 
         while True:
-            hash = hashlib.sha256(("Hello World!" + str(self.nonce)).encode('utf-8'))
+            hash = hashlib.sha256(str(self.nonce*self.prev_nonce).encode('utf-8'))
             self.guess += 1
             if D in str(hash.hexdigest()[:LEADING_ZEROS]):
                 self.prev_hash = hash
@@ -43,7 +44,9 @@ def main():
     guesses = 0
     start = time.time()
     for i in range(0, NUM_OF_BLOCKS):
-        block_chain.append(Block(len(block_chain), block_chain[i - 1].prev_hash if i - 1 > -1 else 1))
+        block_chain.append(Block(len(block_chain),
+                                 block_chain[i - 1].prev_hash if i - 1 > -1 else 1,
+                                 block_chain[i - 1].prev_nonce if i - 1 > -1 else 1))
         guesses += block_chain[i].guess
     end = time.time()
 
@@ -62,8 +65,10 @@ def main():
     start = time.time()
     guesses = 0
     for i in range(0, NUM_OF_BLOCKS):
-        block_chain.append(Block(len(block_chain), block_chain[i - 1].prev_hash if i - 1 > -1 else 1))
-        guesses += block_chain[i].nonce
+        block_chain.append(Block(len(block_chain),
+                                 block_chain[i - 1].prev_hash if i - 1 > -1 else 1,
+                                 block_chain[i - 1].prev_nonce if i - 1 > -1 else 1))
+        guesses += block_chain[i].guess
     end = time.time()
 
     print("Average guesses Blocks = 10; D = 4: " + str(int(guesses / NUM_OF_BLOCKS)))
@@ -78,8 +83,10 @@ def main():
     start = time.time()
     guesses = 0
     for i in range(0, NUM_OF_BLOCKS):
-        block_chain.append(Block(len(block_chain), block_chain[i - 1].prev_hash if i - 1 > -1 else 1))
-        guesses += block_chain[i].nonce
+        block_chain.append(Block(len(block_chain),
+                                 block_chain[i - 1].prev_hash if i - 1 > -1 else 1,
+                                 block_chain[i - 1].prev_nonce if i - 1 > -1 else 1))
+        guesses += block_chain[i].guess
     end = time.time()
 
     print("Average guesses Blocks = 10; D = 5: " + str(int(guesses / NUM_OF_BLOCKS)))
