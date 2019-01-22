@@ -1,0 +1,29 @@
+First of all, there is a solution needed to protect ones transactions but also
+not creating a single point of failure with for example a trust authoity.
+
+With a public and a privat key, it is possible that Alice generates a signature
+by using her privat key. She can now publish a message with the signature
+and everybody who knows the public key can verify that the message is writen by
+Alice. This public key cannot be used to generate a signature in the name of
+Alice.
+
+The private key is a integer number between 0 and 10E77. if you are able to check
+1 trillion keys per second it would still take 1 million times the universe
+exists. The key is stored in the WIF format which is a string of letters and
+numbers and starts with a "5"
+
+Every transaction is signed with the private key. With this method it is not
+possible to fake or manipulate a transaction that is still valid when
+verified with the public key in reasonable time.
+
+The public key is generated out of the private key using ECC. Than a adress can
+be genrated out of the public key. It is not possible to revert this process
+due to mathematical problems (trap door functions)
+
+It is important to choose a privat key that is not already used for a Bitcoin
+Adress. If someone sees a transaction to a specific bitcoin adress, which privat
+key he knows, because he generated it for himself in the past, he can easily
+perform a transaction from this adress to his own.
+Every Adress is generated from a public key which is generated from a privat keys
+so you only need to know the privat key of an adress to have access to the bitcoins
+transfered to it.
