@@ -1,0 +1,28 @@
+a)
+Ethereum is an open software platform based on blockchain technology that enables developers to build and 
+deploy decentralized applications. Like Bitcoin, Ethereum is a distributed public blockchain network. The most 
+important distinction to note is that Bitcoin and Ethereum differ substantially in purpose and capability.
+The Ethereum blockchain focuses on running the programming code of any decentralized application, where ether is
+the cryptocurrency that fuels the network. In addition to bitcoin ether is used by people on the network to pay
+for code execution (self-operating computer programs). Ethereum enables the development thousands of different
+applications on one blockchain platform and so it has much more capability as bitcoin.
+
+b)
+Smart Contract is just an expression used to describe a computer code that can facilitate the exchange of money, 
+content, property, shares or anything of value. When a smart contract is executed on the blockchain, it is 
+automatically executed like a self-propelled computer program when certain conditions are met. 
+
+Smart Contracts run on the blockchain and are executed exactly as they are programmed, without the possibility of 
+censorship, downtime, fraud or third-party intervention.
+
+c)
+The core innovation of Ethereum is a complete Turing software that runs on the Ethereum network. It allows anyone 
+to run any program, regardless of the programming language, with sufficient time and memory. The Ethereum Virtual 
+Machine makes the process of creating blockchain applications easier and more efficient than ever. Instead of having 
+to build a completely new blockchain for each new application, Ethereum enables the development of potentially thousands 
+of different applications on a single platform.
+
+Ethereum moves forward and looks forward to a bright future. By providing a user-friendly platform that enables people 
+to harness the power of blockchain technology, Ethereum is accelerating the decentralization of the global economy. 
+Decentralized applications have the potential to break down hundreds of industries including finance, real estate, 
+science, insurance, healthcare and the public sector and many others.
