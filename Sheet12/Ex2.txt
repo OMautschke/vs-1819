@@ -1,0 +1,10 @@
+Security features:
+    -max 256 operations
+    -not turing complete, no loops
+    -stack based
+
+If the language were turing complete, it would add additional complexity.
+However the more complex a piece of software is, the more vulnverabilities it can possess.
+Bitcoin script is completly deterministic, there is no way to implement, intentionally or unintentionally,
+infinite loops, thus halting the comlpete bitcoin software.
+Due to its max 256 operations and non turing completness, it is much harder to write malicious code (or impossible)
