@@ -1,0 +1,3 @@
+sqrt(1764) = 42
+scriptPubKey: <possible sqrt(1764)> OP_EQUALVERIFY
+scriptSig: <42>
