@@ -1,0 +1,42 @@
+Exercise 7
+
+A bitcoin  wallet does not store the coins directly. All coins are
+stored in the distributed blockchain, bitcoin is based on. The wallet
+only stores the privat key and of course the adress, the coins
+were send to. Wallets are used to stores the keys securly and sign
+transactions in order to spend the coins.
+
+There are 6 types of wallets:
+
+Desktop Computer Wallets (local wallets)
+	This wallets store the information needed for transactions
+	on a computer locally. Therefor, it is not nessecary to trust
+	some service taking care of the coins. There are versions that
+	store the whole blockchain locally, which is nessecary to mine
+	bitcions, and others, that just store the key information
+
+Wallet Apps
+	Wallet Apps are used on mobile devices. They are needed for paying
+	with a mobile device. They eitther store the key informations on the
+	device or just represent a frontend for a web based wallet service
+
+Web Wallets
+	Web wallets are a service in the internet to store bitcions. Of course
+	such a service has to be trustful. There are services just using a 
+	user account, were the informations are stored and transacations can
+	be performed. With a multi sign wallet, more then one account has to log
+	in and sign a transacation for security reasons.
+	
+Hardware Wallets
+	This kind of wallets are pieces of hardware designed to store bitcoins
+	securly
+	
+Paper Wallets
+	Because only the privat key and adresse ist nessecary to access the bitcoins
+	it is also possible to print this information onto paper. No electronic
+	storage is needed.
+	
+Brain Wallet
+	This tools do not store the information like keys and adresses directly.
+	They provide an algorithm that reconstructs this information with a password.
+	

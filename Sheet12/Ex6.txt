@@ -1,0 +1,28 @@
+Exercise 6
+
+There are 3 ways to burn bitcoins:
+
+- spending bitcoins to an adress, which is legit
+  but no privat key was generated to have access to it
+  
+- using the OP_RETURN statement, which also enables
+  to store text inside the blockchain. This can be used
+  for contracts, because statments or agreements stored
+  with an OP_RETURN statement inside a blockchain can not be changed
+  in the future with reasonable energy investions
+  
+- if somebody does not claim the block reward when minig a block,
+  this bitcoins do never exist and are really lost forever
+  
+A proof of burn is another way to have consensus in a blockchain network.
+Traditionally, the user how is allowed to generate a new block and
+therefor gets the block reward is choosen in a consens by investing
+calculation power or owning currency in the network. With the proof
+of burn, its choose by the amount of coins, the user has
+burned in the past.
+
+The second option (OP_RETURN) provides the concept for a proof-of-burn.
+Its absolutly clear, that this coins are burned by checking the OP_RETURN
+statement. Sending coins to a burning address is not a valid proof-of-burn
+because there is no guarentee, that this coins are realy burned
+and nobody has access to them.
