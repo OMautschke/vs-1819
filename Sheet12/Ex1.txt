@@ -1,0 +1,7 @@
+Expensive steps:
+8. Reject if we already have matching tx in the pool, or in a block in the main branch
+10. For each input, look in the main branch and the transaction pool to find the referenced output transaction. If the output transaction is missing for any input, this will be an orphan transaction. Add to the orphan transactions, if a matching transaction is not in there already.
+20. For each orphan transaction that uses this one as one of its inputs, run all these steps (including this one) recursively on that orphan
+
+You want to have you programm as multithreaded as possible. If there a 100 transactions you would want to have at least 100 cores processing it.
+For this you could build a distributed system.
